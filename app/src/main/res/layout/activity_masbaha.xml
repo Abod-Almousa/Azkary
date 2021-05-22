@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasbahaActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#FFD163"
+        app:cardCornerRadius="5dp"
+        android:outlineSpotShadowColor="#FFB400"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/counter_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="عدد التسبيحات"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+
+            <com.robinhood.ticker.TickerView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/counter_label"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="45sp"
+                android:text="111"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tasbih"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_tasbih"
+        android:background="@drawable/tasbih_bachground"
+        android:padding="15dp"
+        android:elevation="18dp"/>
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_clear_tasbih"/>
+</RelativeLayout>
