@@ -58,8 +58,8 @@ public class AzkarAdapter extends RecyclerView.Adapter<AzkarAdapter.ViewHolder>{
                     current++;
                     if(limit == current){
 
-                        holder.bottom.setTag("limit");
-                        checkDarkMode(view, holder.bottom);
+                        //holder.bottom.setTag("limit");
+                        //checkDarkMode(view, holder.bottom);
 
                         Vibrator v = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
